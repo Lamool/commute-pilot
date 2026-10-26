@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "commute-pilot",
+  "description": "서울 지하철 출근 브리핑 → 터미널 · 카카오톡 나챗방 플러그인",
+  "owner": { "name": "Lamool" },
+  "plugins": [
+    {
+      "name": "commute-pilot",
+      "description": "서울 지하철 실시간 도착정보를 읽어 지금 나가도 되는지 알려 주고, 요청하면 카카오톡 나챗방으로 보냅니다.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

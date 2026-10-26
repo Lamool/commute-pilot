@@ -1,0 +1,22 @@
+{
+  "name": "commute-pilot",
+  "description": "「출근 브리핑」이라고 하면 서울 지하철 실시간 도착정보를 읽어 지금 나가도 되는지 알려 주고, 요청하면 카카오톡 나챗방으로도 보냅니다.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["subway", "seoul", "commute", "openapi", "mcp"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*__KakaotalkChat-MemoChat",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/check-commute-message.js\"",
+            "timeout": 5,
+            "statusMessage": "출근 브리핑 메시지 검사 중..."
+          }
+        ]
+      }
+    ]
+  }
+}
