@@ -32,7 +32,7 @@
 ## 설치
 
 ```powershell
-claude plugin marketplace add 내아이디/commute-pilot
+claude plugin marketplace add Lamool/commute-pilot
 claude plugin install commute-pilot@commute-pilot
 ```
 
